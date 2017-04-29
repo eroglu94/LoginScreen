@@ -1,0 +1,20 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LoginScreen"
+             xmlns:Custom="http://metro.mahapps.com/winfx/xaml/controls" x:Class="LoginScreen.HelpUserControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             Width="320" Height="253.5">
+    <Grid>
+        <Button x:Name="button" Click="button_Click" Content="Send Log Files to Developer" Margin="55,125,55,90.38" FontWeight="Bold"/>
+
+        <Custom:ProgressRing x:Name="pring" HorizontalAlignment="Stretch" Margin="130,0,130,20.54" VerticalAlignment="Bottom" IsLarge="False" d:LayoutOverrides="Height" IsActive="False"/>
+        <TextBlock x:Name="txtblockhelp" Margin="127,0" TextWrapping="Wrap" FontSize="24" Foreground="#FF5BBD69" IsHitTestVisible="True" Height="28.847" Text="Done!" VerticalAlignment="Bottom" Visibility="Hidden"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="4.5,30.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="89.5" Width="315.5"><Run Text="Software"/><Run Text="Version: "/><Run Text="v"/><Run Text="1.0.2"/><LineBreak/><Run Text="Copyright© 2016 Enis Çağrı Eroğlu"/><LineBreak/><Run/></TextBlock>
+        <Image x:Name="imghelp" Height="50" Margin="135,0,135,28.847" VerticalAlignment="Bottom" Source="success.png" Stretch="Fill" Width="50" Visibility="Hidden"/>
+
+    </Grid>
+</UserControl>
